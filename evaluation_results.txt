@@ -1,0 +1,8 @@
+========== MODEL EVALUATION ==========
+Total True Positives (TP): 34
+Total False Negatives (FN): 25
+Total False Positives (FP): 19
+Recall: 57.63%
+Precision: 64.15%
+F1-Score: 60.71%
+Visualized results saved to: E:/Vaibhav/yolov8-results/evaluation_results

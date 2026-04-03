@@ -1,0 +1,5 @@
+train: E:/Vaibhav/train/images
+val: E:/Vaibhav/val/images
+
+nc: 4
+names: ['Good Sugarcane', 'Node', 'Red-Rot', 'Vaibhav']

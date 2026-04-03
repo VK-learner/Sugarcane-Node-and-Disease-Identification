@@ -1,0 +1,355 @@
+PS E:\Vaibhav> & C:/Users/desai/anaconda3/envs/YoloV8/python.exe e:/Vaibhav/train.py
+
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    897664  ultralytics.nn.modules.head.Detect           [80, [64, 128, 256]]
+YOLOv8n summary: 225 layers, 3157200 parameters, 3157184 gradients, 8.9 GFLOPs
+
+New https://pypi.org/project/ultralytics/8.3.240 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.20 torch-2.4.1 CUDA:0 (NVIDIA GeForce RTX 3050 6GB Laptop GPU, 6144MiB)
+engine\trainer: task=detect, mode=train, model=yolov8n.yaml, data=E:/Vaibhav/data.yaml, epochs=50, time=None, patience=15, batch=-1, imgsz=640, save=True, save_period=-1, cache=False, device=0, workers=8, project=E:/Vaibhav/yolov8-results, name=My-Model-yolov8n, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=True, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=E:\Vaibhav\yolov8-results\My-Model-yolov8n
+Overriding model.yaml nc=80 with nc=4
+
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    752092  ultralytics.nn.modules.head.Detect           [4, [64, 128, 256]]
+YOLOv8n summary: 225 layers, 3011628 parameters, 3011612 gradients, 8.2 GFLOPs
+
+Freezing layer 'model.22.dfl.conv.weight'
+AMP: running Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Downloading https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8n.pt to 'yolov8n.pt'...
+100%|███████████████████████████████████████████████████████████████████████████| 6.23M/6.23M [00:00<00:00, 7.09MB/s]
+C:\Users\desai\anaconda3\envs\YoloV8\lib\site-packages\ultralytics\nn\tasks.py:634: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(file, map_location="cpu"), file  # load
+C:\Users\desai\anaconda3\envs\YoloV8\lib\site-packages\ultralytics\utils\checks.py:638: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(True):
+AMP: checks passed ✅
+C:\Users\desai\anaconda3\envs\YoloV8\lib\site-packages\ultralytics\engine\trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+C:\Users\desai\anaconda3\envs\YoloV8\lib\site-packages\ultralytics\utils\autobatch.py:26: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(amp):
+AutoBatch: Computing optimal batch size for imgsz=640
+AutoBatch: CUDA:0 (NVIDIA GeForce RTX 3050 6GB Laptop GPU) 6.00G total, 0.10G reserved, 0.06G allocated, 5.84G free
+      Params      GFLOPs  GPU_mem (GB)  forward (ms) backward (ms)                   input                  output
+     3011628       8.197         0.193         32.58         67.88        (1, 3, 640, 640)                    list
+     3011628       16.39         0.300          30.2          38.9        (2, 3, 640, 640)                    list
+     3011628       32.79         0.526         34.27         30.41        (4, 3, 640, 640)                    list
+     3011628       65.58         1.040          33.3         43.89        (8, 3, 640, 640)                    list
+     3011628       131.2         1.992         57.75         62.08       (16, 3, 640, 640)                    list
+AutoBatch: Using batch-size 28 for CUDA:0 3.60G/6.00G (60%) ✅
+train: Scanning E:\Vaibhav\train\labels.cache... 132 images, 0 backgrounds, 0 corrupt: 100%|██████████| 132/132 [00:0
+val: Scanning E:\Vaibhav\val\labels.cache... 24 images, 0 backgrounds, 0 corrupt: 100%|██████████| 24/24 [00:00<?, ?i
+Plotting labels to E:\Vaibhav\yolov8-results\My-Model-yolov8n\labels.jpg... 
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+optimizer: AdamW(lr=0.00125, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0004375), 63 bias(decay=0.0)
+50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       1/50       3.6G      3.538      4.166      4.241        104        640: 100%|██████████| 5/5 [00:04<00:00,  1.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:01
+                   all         24         61    0.00282      0.535    0.00267    0.00077
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       2/50      3.69G      3.659      4.223      4.242        116        640: 100%|██████████| 5/5 [00:02<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00299      0.535    0.00311   0.000891
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       3/50      3.64G      3.442      4.163      4.206         95        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00274      0.521    0.00349   0.000949
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       4/50      3.63G      3.438      4.085      4.171         99        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00271      0.521    0.00446    0.00149
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       5/50      3.64G      3.423      3.944      4.136         79        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00271      0.521    0.00797    0.00178
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       6/50      3.65G      3.485      3.725      4.101        107        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00275      0.521    0.00433    0.00128
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       7/50      3.64G      3.371      3.568      4.012        126        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61     0.0028      0.521    0.00727    0.00178
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       8/50      3.64G      3.411      3.447      3.903        112        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00279      0.521    0.00731    0.00198
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       9/50      3.68G      3.344      3.497      3.875        118        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00273      0.521    0.00532    0.00282
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      10/50      3.66G      3.309      3.392      3.825        109        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00274      0.521    0.00492    0.00124
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      11/50      3.66G      3.179      3.287      3.742         98        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00288      0.535     0.0137    0.00343
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      12/50      3.66G        3.1      3.156       3.68        116        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61     0.0029      0.535     0.0176    0.00462
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      13/50      3.67G      3.035      3.229      3.619        115        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00258      0.507     0.0178    0.00403
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      14/50      3.63G      3.012      3.109      3.541         87        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00291      0.535     0.0106    0.00204
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      15/50      3.67G       2.94      3.027      3.485        120        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00268      0.521     0.0196     0.0048
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      16/50      3.66G      2.865      2.978      3.381        114        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00289      0.535     0.0212    0.00494
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      17/50      3.66G      2.782       2.99      3.322         78        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61    0.00216      0.521     0.0665     0.0109
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      18/50      3.65G      2.744      2.859      3.283         92        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.814      0.167     0.0945     0.0247
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      19/50      3.66G      2.758      2.883      3.246        113        640: 100%|██████████| 5/5 [00:02<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.843      0.111      0.151     0.0599
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      20/50      3.64G      2.695      2.845      3.217        112        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.878      0.167      0.159     0.0625
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      21/50      3.63G      2.684      2.707      3.115        114        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.819     0.0972     0.0757     0.0387
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      22/50      3.64G      2.599      2.684       3.07         95        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61       0.87      0.139      0.156     0.0543
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      23/50      3.63G       2.59      2.656      3.028        114        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.865      0.166      0.116     0.0476
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      24/50      3.66G      2.548      2.679      2.989        100        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.628      0.137      0.071     0.0256
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      25/50      3.67G      2.564       2.67      3.067         91        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.625      0.174      0.138     0.0571
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      26/50      3.64G      2.409      2.555      2.878         94        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.622      0.167      0.161     0.0676
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      27/50      3.63G      2.386       2.59      2.875         91        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.637      0.181      0.217     0.0653
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      28/50      3.64G      2.362      2.526      2.847        124        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.893      0.139      0.204     0.0788
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      29/50      3.67G      2.382      2.511      2.895        104        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61        0.6      0.236      0.137      0.049
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      30/50      3.63G      2.392      2.464      2.826         98        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00 
+                   all         24         61      0.365      0.247      0.136     0.0496
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      31/50      3.63G      2.248      2.495      2.778         89        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.665      0.189       0.15     0.0594
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      32/50      3.63G      2.335      2.372      2.799         99        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.488      0.238      0.228     0.0746
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      33/50      3.67G      2.297      2.334      2.709        100        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.524      0.237      0.278     0.0704
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      34/50      3.64G      2.202      2.335       2.73        107        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.632      0.267      0.326      0.106
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      35/50      3.67G      2.194      2.273      2.679         91        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.545      0.305       0.37      0.145
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      36/50      3.66G      2.213      2.318      2.658        106        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.575      0.249      0.477      0.133
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      37/50      3.66G      2.097      2.245       2.61        106        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.677      0.307      0.361      0.129
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      38/50      3.64G       2.17      2.247      2.599        116        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.552      0.254      0.281      0.117
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      39/50      3.63G      2.136       2.19      2.609         87        640: 100%|██████████| 5/5 [00:01<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.641      0.317      0.424      0.177
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      40/50      3.66G       2.05      2.142      2.506        122        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61       0.75      0.324      0.442      0.212
+Closing dataloader mosaic
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      41/50       3.6G      2.042      2.656      2.611         40        640: 100%|██████████| 5/5 [00:02<00:00,  2.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61       0.74      0.301      0.435      0.201
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      42/50      3.61G      1.959      2.345      2.477         51        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.756      0.279      0.392      0.188
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      43/50      3.63G      1.943      2.409       2.48         42        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61       0.75        0.3      0.371      0.193
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      44/50      3.57G      1.877      2.261      2.453         51        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.678      0.357      0.362      0.191
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      45/50      3.63G      1.861      2.259      2.467         36        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.744      0.408        0.4        0.2
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      46/50      3.58G      1.873      2.278      2.458         39        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.785      0.417      0.556      0.284
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      47/50      3.63G      1.827      2.117       2.34         51        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.843      0.441       0.72      0.373
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      48/50      3.61G      1.765      2.087       2.33         42        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.863       0.42      0.674      0.344
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      49/50      3.63G      1.783      2.043      2.355         48        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.906      0.412      0.673      0.353
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      50/50      3.61G        1.8      2.078      2.352         51        640: 100%|██████████| 5/5 [00:01<00:00,  3.
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.742       0.46      0.675      0.354
+
+50 epochs completed in 0.049 hours.
+Optimizer stripped from E:\Vaibhav\yolov8-results\My-Model-yolov8n\weights\last.pt, 6.3MB
+Optimizer stripped from E:\Vaibhav\yolov8-results\My-Model-yolov8n\weights\best.pt, 6.3MB
+
+Validating E:\Vaibhav\yolov8-results\My-Model-yolov8n\weights\best.pt...
+Ultralytics YOLOv8.1.0 🚀 Python-3.8.20 torch-2.4.1 CUDA:0 (NVIDIA GeForce RTX 3050 6GB Laptop GPU, 6144MiB)
+YOLOv8n summary (fused): 168 layers, 3006428 parameters, 0 gradients, 8.1 GFLOPs
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00
+                   all         24         61      0.574      0.663      0.711      0.393
+        Good Sugarcane         24         18      0.514      0.889      0.843      0.535
+                  Node         24         29      0.341      0.931      0.776      0.342
+               Red-Rot         24         12       0.77      0.333      0.394       0.15
+               Vaibhav         24          2      0.672        0.5      0.828      0.544
+Speed: 0.3ms preprocess, 11.3ms inference, 0.0ms loss, 2.3ms postprocess per image
+Results saved to E:\Vaibhav\yolov8-results\My-Model-yolov8n
+PS E:\Vaibhav> 
