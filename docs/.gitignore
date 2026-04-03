@@ -1,0 +1,127 @@
+# Model weights (too large - don't push to GitHub)
+*.pt
+*.pth
+*.weights
+yolov8n.pt
+best.pt
+last.pt
+model.pt
+
+# Dataset (local only - not needed on GitHub)
+data/
+dataset/
+datasets/
+train/
+val/
+test/
+images/
+labels/
+annotations/
+
+# Training outputs (large files)
+yolov8-results/
+runs/
+outputs/
+evaluation_results/
+results/
+checkpoints/
+logs/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+yolov8-env/
+.env
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+.jupyter/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.temp/
+temp/
+
+# IDE specific
+.vscode/settings.json
+.vscode/launch.json
+.idea/workspace.xml
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Misc
+*.log
+*.pot
+*.mo
+.cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Mac specific
+.AppleDouble
+.LSOverride
+*.dSYM/
+.apdisk
+
+# Video files (optional - uncomment if needed)
+# *.mp4
+# *.avi
+# *.mov
+# *.mkv
+
+# Large image files (optional - uncomment if needed)
+# *.tiff
+# *.psd
+# *.raw

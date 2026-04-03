@@ -1,0 +1,26 @@
+# Core dependencies for YOLOv8 Sugarcane Detection
+ultralytics>=8.1.0
+opencv-python>=4.8.0
+torch>=2.0.0
+torchvision>=0.15.0
+pyyaml>=6.0
+numpy>=1.23.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+pillow>=9.5.0
+tqdm>=4.65.0
+pandas>=1.5.0
+
+# Optional: For Jupyter notebook support
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Optional: For model export and optimization
+onnx>=1.14.0
+onnxruntime>=1.16.0
+
+# Optional: For TensorRT export (GPU acceleration)
+# tensorrt>=8.5.0  # Requires CUDA Toolkit
+
+# Optional: For edge deployment
+onnxruntime-gpu>=1.16.0  # GPU-optimized ONNX runtime
